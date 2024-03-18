@@ -19,6 +19,13 @@ const list = document.querySelector("#list");
 inputForm.addEventListener("submit", (evt) => {
     evt.preventDefault();
     const newListItem = document.createElement("li");
+    //added delete button
+    const deleteItem = document.createElement("button");
+    deleteItem.textContent = "Delete";
+    deleteItem.addEventListener("click", (evt) => {
+        newListItem.remove();
+    })
     newListItem.innerText = evt.target["new-todo"].value;
     list.appendChild(newListItem);
+    newListItem.appendChild(deleteItem);
 });
