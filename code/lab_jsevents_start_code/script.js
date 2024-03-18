@@ -32,6 +32,7 @@ inputForm.addEventListener("submit", (evt) => {
 
 //Date button
 const date = document.querySelector("#date-button");
+//Date text 
 const dateText = document.querySelector("#date-text");
 //On click
 date.addEventListener("click", (evt) => {
